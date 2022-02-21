@@ -17,15 +17,10 @@ export const RelatedPosts = styled.section`
   color: ${themes.default.colors.font.light};
   display: flex;
   flex-direction: column;
-  height: ${pxToRem(250)};
+  flex-grow: 0.5;
   justify-content: flex-start;
   padding-top: ${pxToRem(24)};
   text-align: center;
-  width: calc(30% - 6px);
-
-  @media screen and (max-width: 1360px) {
-    height: ${pxToRem(180)};
-  }
 
   @media screen and (max-width: 600px) {
     width: 100%;

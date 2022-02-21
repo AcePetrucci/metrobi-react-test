@@ -8,22 +8,33 @@ export const MainContainer = styled.section`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: ${pxToRem(12)};
+  gap: ${pxToRem(12, 6)};
+  height: ${pxToRem(1215)};
   justify-content: space-between;
   margin: ${pxToRem(12, 0)};
-  max-height: ${pxToRem(1215)};
+
+  &::before,
+  &::after {
+    content: '';
+    order: 2;
+    flex-basis: 100%;
+  }
 
   @media screen and (max-width: 1360px) {
-    max-height: ${pxToRem(915)};
+    height: ${pxToRem(915)};
   }
 
   @media screen and (max-width: 1080px) {
-    max-height: ${pxToRem(715)};
+    height: ${pxToRem(715)};
   }
 
   @media screen and (max-width: 600px) {
-    max-height: initial;
     flex-direction: row;
+
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 `;
 
@@ -31,6 +42,11 @@ export const RelatedContainer = styled.section`
   display: flex;
   flex-wrap: wrap;
   gap: ${pxToRem(12)};
+  height: ${pxToRem(250)};
   justify-content: space-between;
   margin-bottom: ${pxToRem(12)};
+
+  @media screen and (max-width: 1360px) {
+    height: ${pxToRem(180)};
+  }
 `;

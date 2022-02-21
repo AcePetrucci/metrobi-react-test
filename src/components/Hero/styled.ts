@@ -17,20 +17,12 @@ export const Hero = styled.section`
   color: ${themes.default.colors.font.light};
   display: flex;
   flex-direction: column;
-  height: ${pxToRem(500)};
+  flex-grow: 1;
   justify-content: flex-start;
   order: 1;
   padding-top: ${pxToRem(24)};
   text-align: center;
   width: calc(40% - 6px);
-
-  @media screen and (max-width: 1360px) {
-    height: ${pxToRem(350)};
-  }
-
-  @media screen and (max-width: 1080px) {
-    height: ${pxToRem(250)};
-  }
 
   @media screen and (max-width: 600px) {
     width: 100%;

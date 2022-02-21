@@ -17,22 +17,15 @@ export const Extra = styled.section`
   color: ${themes.default.colors.font.light};
   display: flex;
   flex-direction: column;
-  height: ${pxToRem(350)};
+  flex-grow: 0.5;
   justify-content: flex-start;
+  order: 2;
   padding-top: ${pxToRem(24)};
   text-align: center;
   width: calc(60% - 6px);
-  order: 4;
-
-  @media screen and (max-width: 1360px) {
-    height: ${pxToRem(250)};
-  }
-
-  @media screen and (max-width: 1080px) {
-    height: ${pxToRem(200)};
-  }
 
   @media screen and (max-width: 600px) {
+    order: 4;
     width: 100%;
   }
 `;
