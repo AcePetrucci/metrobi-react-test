@@ -1,6 +1,6 @@
-# React + ESBuild + Typescript + ESlint Boilerplate
+# Metrobi React Test
 
-This repo is a starter kit boilerplate for new React applications using ESBuild, Typescript and ESlint.
+This repo is a test requested by Metrobi, with a simple [React Boilerplating](https://github.com/AcePetrucci/react-esbuild-typescript-eslint-boilerplate) that I created for me.
 
 ## Installation
 
@@ -27,7 +27,7 @@ You can also change that in the `esbuild.js` config file:
 
 ## Running
 
-You can serve the boilerplate by running:
+You can serve the test by running:
 
 ```bash
   npm run start
