@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react",
+    "baseUrl": "./src",
+    "paths": {
+      "themes": ["shared/themes"],
+      "styled": ["shared/styled"],
+      "components": ["components"],
+    }
+  },
+  "exclude": [
+    "/node_modules/**/*",
+  ]
+}
